@@ -1,4 +1,4 @@
-from math_series.math_series import fibonacci, lucas
+from math_series.math_series import fibonacci, lucas, sum_series
 import pytest
 
 def test_fib():
@@ -72,3 +72,6 @@ def test_luc_30():
     actual = lucas(30)
     expected = 1860498
     assert actual == expected
+
+def test_series():
+    assert sum_series
