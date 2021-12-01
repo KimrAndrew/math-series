@@ -100,3 +100,8 @@ def test_series_luc_one():
     actual = sum_series(1,2,1)
     expected = lucas(1)
     assert actual == expected
+
+def test_series_luc_two():
+    actual = sum_series(2,2,1)
+    expected = lucas(2)
+    assert actual == expected
