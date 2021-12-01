@@ -75,3 +75,28 @@ def test_luc_30():
 
 def test_series():
     assert sum_series
+
+def test_series_fib_zero():
+    actual = sum_series(0)
+    expected = fibonacci(0)
+    assert actual == expected
+
+def test_series_fib_one():
+    actual = sum_series(1)
+    expected = fibonacci(1)
+    assert actual == expected
+
+def test_series_fib_2():
+    actual = sum_series(2)
+    expected = fibonacci(2)
+    assert actual == expected
+
+def test_series_luc_zero():
+    actual = sum_series(0,2,1)
+    expected = lucas(0)
+    assert actual == expected
+
+def test_series_luc_one():
+    actual = sum_series(1,2,1)
+    expected = lucas(1)
+    assert actual == expected
